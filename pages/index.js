@@ -7,7 +7,9 @@ function Home(props) {
   var exp = Math.floor(Math.random() * props.sitecoreExperiences.length)
   console.warn("Length Exp: ", exp);
   
-  var experience = props.sitecoreExperiences[exp].sitecore.route.fields;
+  var experience0 = props.sitecoreExperiences[0].sitecore.route.fields;
+  var experience1 = props.sitecoreExperiences[1].sitecore.route.fields;
+  var experience2 = props.sitecoreExperiences[2].sitecore.route.fields;
   return <div>
   <header>
     <h1 className="header__name">
@@ -18,18 +20,60 @@ function Home(props) {
   <div id="main">
     <article>
     <img src="/protonlogo.jpg" className="logo" />
-    <h2 className="car__name">{experience.Title.value}</h2>
-    <h4>{experience.Text.value}</h4>
+    <h2 className="car__name">{experience0.Title.value}</h2>
+    <h4>{experience0.Text.value}</h4>
+    
+
+
+
+
+
+
+
+    {/* <img className="car__image" src={experience.Image.value} alt={experience.Title.value} /> */}
+
+    <h3>Technical specs</h3>
+       <hr/>
+       <h4>Color: {experience0.Color?.value}</h4>
+       <h4>Engine: {experience0.Engine?.value}</h4>
+       <h4>Price: {experience0.Price?.value}</h4>
+       <h4>Weigth: {experience0.Weight?.value}</h4>
+       <h4>Length: {experience0.Length?.value}</h4>
+       <h4>Fuel tank capacity: {experience0.FuelTank?.value}</h4>
+       <hr/>
+    </article>
+    <article>
+    <img src="/protonlogo.jpg" className="logo" />
+    <h2 className="car__name">{experience1.Title.value}</h2>
+    <h4>{experience1.Text.value}</h4>
     
     {/* <img className="car__image" src={experience.Image.value} alt={experience.Title.value} /> */}
 
     <h3>Technical specs</h3>
        <hr/>
-       <h4>Engine: {experience.Engine?.value}</h4>
-       <h4>Price: {experience.Price?.value}</h4>
-       <h4>Weigth: {experience.Weight?.value}</h4>
-       <h4>Length: {experience.Length?.value}</h4>
-       <h4>Fuel tank capacity: {experience.FuelTank?.value}</h4>
+       <h4>Color: {experience1.Color?.value}</h4>
+       <h4>Engine: {experience1.Engine?.value}</h4>
+       <h4>Price: {experience1.Price?.value}</h4>
+       <h4>Weigth: {experience1.Weight?.value}</h4>
+       <h4>Length: {experience1.Length?.value}</h4>
+       <h4>Fuel tank capacity: {experience1.FuelTank?.value}</h4>
+       <hr/>
+    </article>
+    <article>
+    <img src="/protonlogo.jpg" className="logo" />
+    <h2 className="car__name">{experience2.Title.value}</h2>
+    <h4>{experience2.Text.value}</h4>
+    
+    {/* <img className="car__image" src={experience.Image.value} alt={experience.Title.value} /> */}
+
+    <h3>Technical specs</h3>
+       <hr/>
+       <h4>Color: {experience2.Color?.value}</h4>
+       <h4>Engine: {experience2.Engine?.value}</h4>
+       <h4>Price: {experience2.Price?.value}</h4>
+       <h4>Weigth: {experience2.Weight?.value}</h4>
+       <h4>Length: {experience2.Length?.value}</h4>
+       <h4>Fuel tank capacity: {experience2.FuelTank?.value}</h4>
        <hr/>
     </article>
     <nav></nav>
