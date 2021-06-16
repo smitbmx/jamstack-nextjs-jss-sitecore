@@ -13,7 +13,7 @@ function Home(props) {
   return <div>
   <header>
     <h1 className="header__name">
-      Welcome to Proton Store
+      Welcome to Proton Store Malaysia
     </h1>
     <h2 className="header__name"></h2>
   </header>
